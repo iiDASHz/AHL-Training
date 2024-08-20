@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exercise Form</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+        }
+        .section h3 {
+            margin: 0; 
+            padding: 0 5px;
+            background: #fff;
+            display: inline-block;
+            position: relative;
+            top: -23px;
+        }
+        table {
+            width: 70%;
+        }
+        td {
+            padding: 3px;
+            vertical-align: top;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="url"],
+        input[type="color"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 80%;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Exercise Form</h2>
+
+        <div class="section">
+            <h3>Personal Information</h3>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td>Personal Website:</td>
+                    <td><input type="url"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>Preferences</h3>
+            <table>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profile Picture:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Favorite Subjects:</td>
+                    <td>
+                        <input type="checkbox"> Math<br>
+                        <input type="checkbox"> Science<br>
+                        <input type="checkbox"> History
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grade:</td>
+                    <td>
+                        <select>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Color:</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td>Favorite Browser:</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>Additional Information</h3>
+            <table>
+                <tr>
+                    <td>Comments:</td>
+                    <td><textarea rows="4"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </div>
+
+</body>
+</html>
